@@ -16,7 +16,8 @@
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#carrinho">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -51,35 +52,6 @@
                 <button class="btn-comprar" data-nome="Vape Modelo Z" data-preco="299.90">Comprar</button>
             </div>
         </div>
-    </section>
-
-    <section id="carrinho" class="carrinho">
-        <h2>Carrinho de Compras</h2>
-        <div id="lista-carrinho">
-            <!-- Itens do carrinho serão adicionados aqui -->
-        </div>
-        <p>Total: R$ <span id="total-carrinho">0,00</span></p>
-        <button id="finalizar-compra" class="btn">Finalizar Compra</button>
-    </section>
-
-    <!-- Seção de Checkout (inicialmente oculta) -->
-    <section id="checkout" class="checkout" style="display: none;">
-        <h2>Finalizar Compra</h2>
-        <form id="form-checkout">
-            <label for="nome-titular">Nome do Titular:</label>
-            <input type="text" id="nome-titular" name="nome-titular" required>
-
-            <label for="numero-cartao">Número do Cartão:</label>
-            <input type="text" id="numero-cartao" name="numero-cartao" required>
-
-            <label for="validade">Validade (MM/AA):</label>
-            <input type="text" id="validade" name="validade" required>
-
-            <label for="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" required>
-
-            <button type="submit" class="btn">Pagar</button>
-        </form>
     </section>
 
     <footer>
