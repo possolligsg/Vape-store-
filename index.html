@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape Store - Sua Loja de Vapes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vape Store</h1>
+            <p>Sua loja de vapes premium</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#carrinho">Carrinho (<span id="contador-carrinho">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo à Vape Store</h2>
+            <p>Encontre os melhores vapes e acessórios para você.</p>
+            <a href="#produtos" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="vape1.jpg" alt="Vape 1">
+                <h3>Vape Modelo X</h3>
+                <p>R$ 199,90</p>
+                <button class="btn-comprar" data-nome="Vape Modelo X" data-preco="199.90">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="vape2.jpg" alt="Vape 2">
+                <h3>Vape Modelo Y</h3>
+                <p>R$ 249,90</p>
+                <button class="btn-comprar" data-nome="Vape Modelo Y" data-preco="249.90">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="vape3.jpg" alt="Vape 3">
+                <h3>Vape Modelo Z</h3>
+                <p>R$ 299,90</p>
+                <button class="btn-comprar" data-nome="Vape Modelo Z" data-preco="299.90">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrinho" class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="lista-carrinho">
+            <!-- Itens do carrinho serão adicionados aqui -->
+        </div>
+        <p>Total: R$ <span id="total-carrinho">0,00</span></p>
+        <button id="finalizar-compra" class="btn">Finalizar Compra</button>
+    </section>
+
+    <!-- Seção de Checkout (inicialmente oculta) -->
+    <section id="checkout" class="checkout" style="display: none;">
+        <h2>Finalizar Compra</h2>
+        <form id="form-checkout">
+            <label for="nome-titular">Nome do Titular:</label>
+            <input type="text" id="nome-titular" name="nome-titular" required>
+
+            <label for="numero-cartao">Número do Cartão:</label>
+            <input type="text" id="numero-cartao" name="numero-cartao" required>
+
+            <label for="validade">Validade (MM/AA):</label>
+            <input type="text" id="validade" name="validade" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit" class="btn">Pagar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vape Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
